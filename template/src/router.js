@@ -7,9 +7,9 @@ const Home = resolve => import(/* webpackChunkName: "home" */'@/views/Home/Home.
 Vue.use(Router){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 export default new Router({
+  saveScrollPosition: true,
+  mode: 'history',
   routes: [
-    saveScrollPosition: true,
-    history: true,
     {
       path: '/',
       name: 'root',
